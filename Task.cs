@@ -101,7 +101,7 @@ public class Staff : Person
             throw new Exception();
         }
 
-        if (joineyear < 21)
+        if ((DateTime.Today.Year) - joineyear < 21)
         {
             throw new Exception();
         }
@@ -204,10 +204,10 @@ public class programe
                     Console.Write("Age :");
                     var age2 = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Write("Year : ");
+                    Console.Write("Salary : ");
                     var salary = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Write("Gpa : ");
+                    Console.Write("JoinYear : ");
                     var joineyear = Convert.ToInt32(Console.ReadLine());
 
                     try
@@ -246,6 +246,7 @@ public class programe
 
                 case 4:
                     database.PrintAll();
+                    Console.WriteLine("");
 
                     break;
 
