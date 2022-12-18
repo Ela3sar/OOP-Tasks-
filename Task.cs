@@ -26,7 +26,7 @@ public class Person
 
     public virtual void Print()
     {
-
+        Console.Write($"My name is :{Name}  , my age is : {Age}");
     }
 
 }
